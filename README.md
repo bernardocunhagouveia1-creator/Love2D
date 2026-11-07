@@ -1,4 +1,10 @@
--- main.lua
+-- LocalScript: place in StarterPlayer > StarterPlayerScripts
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
 local settings = {
     inactivitySeconds = 30,
     minimumSeconds = 5,
